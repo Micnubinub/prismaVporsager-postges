@@ -5,6 +5,7 @@ const sql = require('postgres')("postgresql://postgres:password@ip:port/db?conne
     connect_timeout: 4,         // Connect timeout in seconds
     no_prepare: false,      // No automatic creation of prepared statements
 });
+
 let num = 0;
 fastify.get('/insert', {
     response: {}
