@@ -1,0 +1,22 @@
+{
+  "name": "prismavposager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^3.9.0",
+    "fastify": "3.27.0",
+    "pg": "^8.7.1",
+    "postgres": "^2.0.0-beta.11",
+    "prexit": "^1.0.0"
+  },
+  "devDependencies": {
+    "prisma": "^3.9.0"
+  }
+}
