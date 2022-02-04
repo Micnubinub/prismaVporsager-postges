@@ -1,6 +1,8 @@
 fastify = require('fastify')();
-const sql = require('postgres')("postgresql://postgres:password@ip:port/db?connection_limit=5", {
-    ssl: false,      // true, prefer, require, tls.connect option
+//todo "postgresql://postgres:password@ip:port/db?connection_limit=5"
+const sql = require('postgres')("postgresql://postgres:development-password@localhost:12340/test?connection_limit=5", {
+    ssl: false,      // true, prefer, require, tls.connect options
+    max: 5,         // Max number of connections
     idle_timeout: 10,          // Idle connection timeout in seconds
     connect_timeout: 4,         // Connect timeout in seconds
     no_prepare: false,      // No automatic creation of prepared statements
